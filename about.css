@@ -1,0 +1,140 @@
+/* about.css */
+
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+
+  /* Style pour l'en-tête */
+  header {
+    background-color: #28a745; /* Couleur de fond vert */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style pour le titre principal */
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Style pour le sous-titre */
+  header p {
+    margin: 0;
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-out 0.5s;
+  }
+  
+  /* Style pour la navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+.quality {
+    margin-bottom: 20px;
+    animation: scaleUp 1.5s ease-out;
+}
+
+.quality h3 {
+    font-size: 1.5em;
+    color: #343a40;
+    animation: fadeIn 1s ease-out;
+}
+
+.quality p {
+    font-size: 1.1em;
+    color: #666;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.quality:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+}

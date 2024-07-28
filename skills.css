@@ -1,0 +1,154 @@
+/* styles.css */
+
+/* Style pour le corps de la page */
+body {
+    background-color: #f8f9fa; /* Couleur de fond blanc très clair */
+    color: #343a40; /* Couleur du texte noir */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 0;
+    padding: 0;
+  }
+  
+ /* Style pour l'en-tête */
+ header {
+    background-color: #28a745; /* Couleur de fond vert */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Style pour le titre principal */
+  header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  /* Style pour le sous-titre */
+  header p {
+    margin: 0;
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-out 0.5s;
+  }
+  
+  /* Style pour la navigation */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Style pour la section des compétences */
+  #skills {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style pour le titre des compétences */
+  #skills h2 {
+    font-size: 2.5em;
+    color: #28a745; /* Couleur du titre vert */
+    margin-bottom: 20px;
+  }
+  
+  /* Conteneur des colonnes de compétences */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Style pour chaque colonne de compétences */
+  .skills-column {
+    flex: 1 1 300px; /* Flexbox pour les colonnes */
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #28a745; /* Bordure verte */
+    border-radius: 10px;
+    background-color: #fff; /* Fond blanc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+  }
+  
+  /* Style pour les titres des colonnes */
+  .skills-column h3 {
+    font-size: 1.8em;
+    color: #343a40; /* Couleur du titre noir */
+    margin-bottom: 15px;
+  }
+  
+  /* Style pour chaque compétence */
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    opacity: 0; /* Rendre l'élément invisible avant l'animation */
+    transform: perspective(800px) translateZ(0); /* Perspective 3D */
+  }
+  
+  /* Style pour l'image des compétences */
+  .skill-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  /* Style pour le texte des compétences */
+  .skill p {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  /* Animation pour chaque compétence */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: perspective(800px) translateY(50px) rotateX(20deg);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(800px) translateY(0) rotateX(0deg);
+    }
+  }
+  
+  /* Animation de rotation pour chaque compétence */
+  @keyframes rotateIn {
+    from {
+      opacity: 0;
+      transform: perspective(800px) rotateY(90deg);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(800px) rotateY(0deg);
+    }
+  }
+  
+  /* Application des animations */
+  .animated-skill {
+    animation: fadeInUp 1s ease-out forwards, rotateIn 1.5s ease-out forwards;
+  }
+  
+  /* Style pour le pied de page */
+  footer {
+    background-color: #343a40; /* Couleur de fond noir */
+    color: #fff; /* Couleur du texte blanc */
+    padding: 10px;
+    text-align: center;
+  }
+  
